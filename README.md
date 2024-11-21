@@ -2,7 +2,7 @@
 
 ## Basic Pi Setup
 
-After installing the Desktop version of Bookworm:
+After installing the Desktop version of Bookworm, update packages and add dev tools. Some of these tools may already be installed but are included here in case you opt for a Lite installation of Bookworm.
 
 ```bash
 sudo apt update
@@ -11,9 +11,7 @@ sudo apt full-upgrade
 
 ```bash
 sudo apt install \
-    git \
-    python3 \
-    python3-pip 
+    git
 ```
 
 ## Set up Python
@@ -34,7 +32,7 @@ Bookworm is strict about installing pakages in the global Python so we create a 
 python -m venv --system-site-packages ~/env
 ```
 
-In your `.profile` add the following to use your private python.
+In your `.bashrc` add the following to use your private python.
 
 ```bash
 # set PATH so it includes user's default Python bin if it exists
