@@ -11,6 +11,14 @@
             "program": "app/app.py",
             "console": "integratedTerminal",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Python Debugger: preview",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "app/preview.py",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

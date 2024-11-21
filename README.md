@@ -15,7 +15,8 @@ sudo apt full-upgrade
 
 ```bash
 sudo apt install \
-    git
+    git \
+    cmake
 ```
 
 ## Set up Python
