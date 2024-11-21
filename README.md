@@ -1,4 +1,8 @@
-# Pi Camera Face Morpher
+# Pi Camera Face Morph
+
+This project implements a set of face morphing experiments that will serve as the basis of a few digital art projects. Images will initially be captured usong a Raspberry Pi Camera V2 that hangs off a Raspberry Pi 4.
+
+Watch this space for more info...
 
 ## Basic Pi Setup
 
@@ -39,4 +43,19 @@ In your `.bashrc` add the following to use your private python.
 if [ -d "$HOME/env/bin" ] ; then
     PATH="$HOME/env/bin:$PATH"
 fi
+```
+
+### Install Pipenv to manage our project environments
+
+```bash
+bash # so that we pick up the new PATH
+pip install pipenv
+```
+
+## Set Up Our Project
+
+In this project's local repository:
+
+```bash
+pipenv install
 ```
