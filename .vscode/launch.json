@@ -8,7 +8,7 @@
             "name": "dlib",
             "type": "debugpy",
             "request": "launch",
-            "program": "app/dlib.py",
+            "program": "app/dlib_streamer.py",
             "console": "integratedTerminal",
             "envFile": "${workspaceFolder}/.env"
         },        {
