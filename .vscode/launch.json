@@ -5,13 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "mediapipe",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "app/mediapipe_streamer.py",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env"
+        },     
+        {
             "name": "dlib",
             "type": "debugpy",
             "request": "launch",
             "program": "app/dlib_streamer.py",
             "console": "integratedTerminal",
             "envFile": "${workspaceFolder}/.env"
-        },        {
+        },        
+        {
             "name": "haarcascade",
             "type": "debugpy",
             "request": "launch",
