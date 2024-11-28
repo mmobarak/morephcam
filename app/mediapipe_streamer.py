@@ -1,7 +1,7 @@
 from flask import Flask, Response, render_template_string
 from picamera2 import Picamera2
-from picamera2.encoders import JpegEncoder
-from picamera2.outputs import FileOutput
+# from picamera2.encoders import JpegEncoder
+# from picamera2.outputs import FileOutput
 from libcamera import Transform
 import cv2
 from io import BytesIO
@@ -12,7 +12,7 @@ import mediapipe as mp
 app = Flask(__name__)
 
 # HTML Template for the web page
-HTML_TEMPLATE = """
+HTML_TEMPLATE1 = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,8 +21,55 @@ HTML_TEMPLATE = """
     <title>Raspberry Pi Camera Stream</title>
 </head>
 <body>
-    <h1>Live Camera Stream</h1>
     <img src="/video_feed" width="100%" style="border: 1px solid black;" />
+    <img src="/video_feed" width="100%" style="border: 1px solid black;" />
+</body>
+</html>
+"""
+
+HTML_TEMPLATE2 = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 2;
+        }
+        .container img {
+            max-width: 50%; /* Adjust the size of the images */
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:disabled {
+            background-color: #aaa;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="/video_feed" />
+        <img src="/video_feed" />
+    </div>
+
 </body>
 </html>
 """
@@ -36,7 +83,7 @@ camera.start()
 
 # Initialize MediaPipe Face Mesh
 mp_face_mesh = mp.solutions.face_mesh
-face_mesh = mp_face_mesh.FaceMesh(static_image_mode=False, max_num_faces=1, min_detection_confidence=0.5)
+face_mesh = mp_face_mesh.FaceMesh(static_image_mode=False, max_num_faces=10, min_detection_confidence=0.5)
 
 
 
@@ -87,7 +134,7 @@ def generate_frames():
 
 @app.route('/')
 def index():
-    return render_template_string(HTML_TEMPLATE)
+    return render_template_string(HTML_TEMPLATE2)
 
 @app.route('/video_feed')
 def video_feed():
