@@ -49,17 +49,10 @@ sudo apt install -y python3-picamera2
 
 ## Set Up Our Project
 
-### Create the Python Virtual Environment
-
-In this project's local repository:
+### Clone this repository
 
 ```bash
-python -m venv --system-site-packages .venv
-source .venv/bin/activate
+git clone https://github.com/mmobarak/morphcam.git
 ```
 
-### Install our Python dependencies
 
-```bash
-pip install -r requirements.txt
-```
