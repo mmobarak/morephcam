@@ -6,7 +6,7 @@ Watch this space for more info...
 
 ## Basic Pi Setup
 
-After installing the Desktop version of Bookworm, update packages and add dev tools that may be required when installing Python packages. Some of these tools may already be installed but are included here in case you opt for a Lite installation of Bookworm.
+After installing the Lite version of Bookworm, update packages and add dev tools that may be required when installing Python packages.
 
 ```bash
 sudo apt update
