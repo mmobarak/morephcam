@@ -6,7 +6,7 @@ Watch this space for more info...
 
 ## Basic Pi Setup
 
-After installing the Desktop version of Bookworm, update packages and add dev tools. Some of these tools may already be installed but are included here in case you opt for a Lite installation of Bookworm.
+After installing the Desktop version of Bookworm, update packages and add dev tools that may be required when installing Python packages. Some of these tools may already be installed but are included here in case you opt for a Lite installation of Bookworm.
 
 ```bash
 sudo apt update
@@ -16,7 +16,12 @@ sudo apt full-upgrade
 ```bash
 sudo apt install \
     git \
-    cmake
+    cmake \
+    ninja-build \
+    autoconf \
+    build-essential \
+    python3-dev \
+    libffi-dev
 ```
 
 ## Set up Python
