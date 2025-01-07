@@ -35,6 +35,12 @@ sudo apt install \
     python3-pip 
 ```
 
+### Use uv For Dependencies
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
 ### Install Raspberry Pi Camera Python Package
 
 ```bash
