@@ -21,7 +21,8 @@ sudo apt install \
     autoconf \
     build-essential \
     python3-dev \
-    libffi-dev
+    libffi-dev \
+    libssl-dev
 ```
 
 ## Set up Python
