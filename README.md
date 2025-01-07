@@ -1,6 +1,6 @@
 # Pi Camera Face Morph
 
-This project implements a set of face morphing experiments that will serve as the basis of a few digital art projects. Images will initially be captured usong a Raspberry Pi Camera V2 that hangs off a Raspberry Pi 4.
+This project implements a set of face morphing experiments that will serve as the basis of a few digital art projects. Images will initially be captured using a Raspberry Pi Camera V2 that hangs off a Raspberry Pi 4.
 
 Watch this space for more info...
 
