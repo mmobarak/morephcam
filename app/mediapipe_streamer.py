@@ -46,21 +46,6 @@ HTML_TEMPLATE2 = """
             border: 2px solid #ccc;
             border-radius: 8px;
         }
-        button {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-        button:disabled {
-            background-color: #aaa;
-            cursor: not-allowed;
-        }
     </style>
 </head>
 <body>
